@@ -531,7 +531,7 @@ func BenchmarkDecorateLinks(b *testing.B) {
 		"maybe make sure there's actually something on your clipboard? :p",
 		"Can't do that here. Only my desktop is usable for CLI",
 		"i tested it with `termux-clipboard-get` and it worked though",
-		"Perhaps the termux-clipboard-get isn't doing it correctly. Or something on the choosen options aren't set right.",
+		"Perhaps the termux-clipboard-get isn't doing it correctly. Or something on the chosen options aren't set right.",
 		"So it seems, Works for me with various options and no --message/-m flag",
 		"you're right though, that's standard, and i'm sure it works that way too",
 		"you don't need `-m` at all when piping to it",
