@@ -286,7 +286,7 @@ func (f *FastTeamChainLoader) loadLockedWithRetries(m libkb.MetaContext, arg fas
 	return res, err
 }
 
-// dervieSeedAtGeneration either goes to cache or rederives the PTK private seed
+// deriveSeedAtGeneration either goes to cache or rederives the PTK private seed
 // for the given generation gen.
 func (f *FastTeamChainLoader) deriveSeedAtGeneration(m libkb.MetaContext, gen keybase1.PerTeamKeyGeneration, dat ftlCombinedData) (seed keybase1.PerTeamKeySeed, err error) {
 
