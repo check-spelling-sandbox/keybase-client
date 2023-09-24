@@ -9,7 +9,7 @@ import {asRows as topBarAsRow} from '../../top-bar'
 import {memoize} from '../../../util/memoize'
 
 type OwnProps = {
-  path: Types.Path // path to the parent folder containering the rows,
+  path: Types.Path // path to the parent folder containing the rows,
   destinationPickerIndex?: number
   headerRows?: Array<RowTypes.HeaderRowItem> | null
 }
