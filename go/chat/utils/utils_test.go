@@ -454,7 +454,7 @@ func BenchmarkDecorateLinks(b *testing.B) {
 		"using google tts",
 		"im working on a bot recording minutes of a meeting inside a team then after the meeting, bot can send back the minutes as audio file",
 		"Learning curve for everyone. Huge teams, like this one, are bound to have more than a few complications.",
-		"actaully theres 2 triggers same with @sholebot the !price. i already changed",
+		"actually theres 2 triggers same with @sholebot the !price. i already changed",
 		"i cant changed mine the korean team used to it",
 		"Yep, imagine single word triggers 10+ bots info. ",
 		"Cute, for a puppy.",
