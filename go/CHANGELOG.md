@@ -70,7 +70,7 @@
 - RSA Support for public exponent e's with <= 7 bytes (rather than 3)
   (via vendored PR: keybase/go-crypto#8)
 - Don't encrypt for DSA and do encrypt for ElGamal subkeys
-  (via vendored PR: keybase/go-crytpo#11)
+  (via vendored PR: keybase/go-crypto#11)
 - Properly serialize ElGamal Subkeys (via vendored PR: keybase/go-crypto#13)
 - Allow DSA sub-signing keys without an explicit KeyFlags (via vendored PR: keybase/go-crypto#12)
 - Fix handling of revoked subkeys (via PR keybase/client#1966 and vendored PR: keybase/go-crypto#15)
