@@ -917,7 +917,7 @@ func (b *Boxer) unboxV2orV3orV4(ctx context.Context, boxed chat1.MessageBoxed,
 			return nil, ierr
 		}
 	case types.UnboxModeQuick:
-		// we skip this check in quick mode, the idea is we will do it later asynchonously so we can
+		// we skip this check in quick mode, the idea is we will do it later asynchronously so we can
 		// deliver messges quicker to the UI.
 	}
 

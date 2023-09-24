@@ -54,7 +54,7 @@ typedef NS_OPTIONS (NSInteger, MPMessagePackOptions) {
 - (void)close;
 
 /*!
- Send RPC request asyncronously with completion block.
+ Send RPC request asynchronously with completion block.
  
  @param method Method name
  @param params Method args. If coder is set on client, we will use it to encode.
