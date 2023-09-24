@@ -1,4 +1,4 @@
-// This hook creates a remote brower window when mounted
+// This hook creates a remote browser window when mounted
 import * as React from 'react'
 import KB2 from '../../util/electron.desktop'
 
