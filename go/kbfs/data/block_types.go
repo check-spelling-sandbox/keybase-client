@@ -391,7 +391,7 @@ func (db *DirBlock) SetIndirectPtrOff(i int, off Offset) {
 	}
 	sOff, ok := off.(*StringOffset)
 	if !ok {
-		panic(fmt.Sprintf("SetIndirectPtrOff called on a dirctory block "+
+		panic(fmt.Sprintf("SetIndirectPtrOff called on a directory block "+
 			"with a %T offset", off))
 	}
 	db.IPtrs[i].Off = *sOff

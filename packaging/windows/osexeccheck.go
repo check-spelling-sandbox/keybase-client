@@ -6,7 +6,7 @@
 // (which could do anything), then they have exploited the system.
 //
 // We want to ensure that when building our own Windows distribution of Keybase, that the behavior of looking
-// in the current diectory for an executable first is disabled. This test ensures that the os/exec package
+// in the current directory for an executable first is disabled. This test ensures that the os/exec package
 // has been suitably modified to get the correct more secure behavior.
 //
 // In order to fix an error from this checker, you must patch the os/exec package on the machine where this
