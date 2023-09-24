@@ -693,7 +693,7 @@ func (fbo *folderBranchOps) commitHeadLocked(
 	fbo.goTracked(func() {
 		err := diskMDCache.Commit(context.Background(), id, rev)
 		if err != nil {
-			log.CDebugf(ctx, "Error commiting revision %d: %+v", rev, err)
+			log.CDebugf(ctx, "Error committing revision %d: %+v", rev, err)
 		}
 	})
 }
@@ -1865,7 +1865,7 @@ func (fbo *folderBranchOps) commitFlushedMD(
 		}
 
 		fbo.vlog.CLogf(
-			ctx, libkb.VLog1, "Prefetch for revision %d complete; commiting",
+			ctx, libkb.VLog1, "Prefetch for revision %d complete; committing",
 			rev)
 	case keybase1.FolderSyncMode_PARTIAL:
 		// For partially-synced TLFs, wait for the partial sync to
@@ -1891,7 +1891,7 @@ func (fbo *folderBranchOps) commitFlushedMD(
 
 	err := diskMDCache.Commit(ctx, fbo.id(), rev)
 	if err != nil {
-		fbo.log.CDebugf(ctx, "Error commiting revision %d: %+v", rev, err)
+		fbo.log.CDebugf(ctx, "Error committing revision %d: %+v", rev, err)
 	}
 }
 
@@ -3082,7 +3082,7 @@ func (fbo *folderBranchOps) SetInitialHeadFromServer(
 				ctx, md, latestRootBlockFetch, nil)
 			if err != nil {
 				fbo.log.CDebugf(ctx,
-					"Couldn't fetch root block, so not commiting MD: %+v", err)
+					"Couldn't fetch root block, so not committing MD: %+v", err)
 				ct = mdNoCommit
 			}
 		}

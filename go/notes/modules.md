@@ -32,7 +32,7 @@ that is not desired.
 
     go mod edit -replace github.com/keybase/go-jsonw=../go-jsonw
 
-This command modifies the `go.mod` file, be sure to remove it before commiting
+This command modifies the `go.mod` file, be sure to remove it before committing
 or merging.
 
 ### Using a forked dependency
