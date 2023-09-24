@@ -403,7 +403,7 @@ func BenchmarkDecorateLinks(b *testing.B) {
 		"Where is the best place to ask some technical questions about the keybase api? ",
 		"It's kindof annoying but also cute. I listen to them once in a while when i miss her",
 		"I got too many from my grandmother saying something like: > Hey it's me [name]. I just wanted to hear how everything is going. you don't have to call back it's always the same. tried to say that it's nice and all, but if she only leaves a message when it is something out of the ordinary then i'll listen to them at that point. but nah",
-		"I'm also not dissing people using it as a communication-of-choice, if it is consentual. I'm just, myself, trying to be less wired in because it fucks with your brain",
+		"I'm also not dissing people using it as a communication-of-choice, if it is consensual. I'm just, myself, trying to be less wired in because it fucks with your brain",
 		"I don't even listen to phone voice mail except for family and doctors ",
 		"By phone, voip,  even voice chat like discord. But, not messages or passing thoughts and notes.",
 		"When I use voice it's for a conversation, not messages in a bottle.",
