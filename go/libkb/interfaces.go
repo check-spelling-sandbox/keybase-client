@@ -1109,7 +1109,7 @@ type ChatHelper interface {
 	BulkAddToConv(context.Context, gregor1.UID, chat1.ConversationID, []string) error
 }
 
-// Resolver resolves human-readable usernames (joe) and user asssertions (joe+joe@github)
+// Resolver resolves human-readable usernames (joe) and user assertions (joe+joe@github)
 // into UIDs. It is based on sever-trust. All results are unverified. So you should check
 // its answer if used in a security-sensitive setting. (See engine.ResolveAndCheck)
 type Resolver interface {
