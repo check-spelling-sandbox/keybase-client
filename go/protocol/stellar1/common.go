@@ -415,14 +415,14 @@ func (o OutsideExchangeRate) DeepCopy() OutsideExchangeRate {
 
 type CurrencySymbol struct {
 	Symbol    string `codec:"symbol" json:"str"`
-	Ambigious bool   `codec:"ambigious" json:"ambigious"`
+	Ambiguous bool   `codec:"ambiguous" json:"ambiguous"`
 	Postfix   bool   `codec:"postfix" json:"postfix"`
 }
 
 func (o CurrencySymbol) DeepCopy() CurrencySymbol {
 	return CurrencySymbol{
 		Symbol:    o.Symbol,
-		Ambigious: o.Ambigious,
+		Ambiguous: o.Ambiguous,
 		Postfix:   o.Postfix,
 	}
 }

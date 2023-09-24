@@ -390,7 +390,7 @@
         },
         {
           "type": "boolean",
-          "name": "ambigious"
+          "name": "ambiguous"
         },
         {
           "type": "boolean",
