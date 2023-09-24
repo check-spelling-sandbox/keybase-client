@@ -34,7 +34,7 @@ const cancelReset = async () => {
     switch (error.code ?? 0) {
       case RPCGen.StatusCode.scnosession:
         // We got logged out because we were revoked (which might have been
-        // becase the reset was completed and this device wasn't notified).
+        // because the reset was completed and this device wasn't notified).
         return undefined
       case RPCGen.StatusCode.scnotfound:
         // "User not in autoreset queue."
