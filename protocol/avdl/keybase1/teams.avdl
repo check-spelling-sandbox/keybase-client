@@ -1836,7 +1836,7 @@ protocol teams {
   // HIDDEN partial for A.C. This is a limitation that can be fixed, but is not critical since the
   // more natural flow would be for Alice to start her load from A.
   //
-  // Because these notifications are delivered asychronously, they are tied together with
+  // Because these notifications are delivered asynchronously, they are tied together with
   // a `guid`: an opaque integer that happens to be the sessionID the initial RPC was called
   // with. Each notification for the same load will contain the same `guid`.
   TeamTreeInitial loadTeamTreeMembershipsAsync(int sessionID, TeamID teamID, string username);

@@ -363,7 +363,7 @@ type KBFSOps interface {
 	GetBadge(ctx context.Context) (keybase1.FilesTabBadge, error)
 	// RefreshCachedFavorites tells the instances to forget any cached
 	// favorites list and fetch a new list from the server.  The
-	// effects are asychronous; if there's an error refreshing the
+	// effects are asynchronous; if there's an error refreshing the
 	// favorites, the cached favorites will become empty.
 	RefreshCachedFavorites(ctx context.Context, mode FavoritesRefreshMode)
 	// ClearCachedFavorites tells the instances to forget any cached

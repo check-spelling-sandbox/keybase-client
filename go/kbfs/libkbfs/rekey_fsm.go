@@ -562,7 +562,7 @@ func getRekeyFSM(ctx context.Context, ops KBFSOps, tlfID tlf.ID) RekeyFSM {
 // would actually cancel the rekey.
 //
 // Currently this is only used in tests and RekeyFile. Normal rekey activities
-// should go through the FSM asychronously.
+// should go through the FSM asynchronously.
 func RequestRekeyAndWaitForOneFinishEvent(ctx context.Context,
 	ops KBFSOps, tlfID tlf.ID) (res RekeyResult, err error) {
 	fsm := getRekeyFSM(ctx, ops, tlfID)
