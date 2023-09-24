@@ -396,7 +396,7 @@
       "teamID": "TeamsTypes.TeamID"
     },
     "markAsUnread": {
-      "_description": "Mark the converstation as unread to the given message ID",
+      "_description": "Mark the conversation as unread to the given message ID",
       "conversationIDKey": "Types.ConversationIDKey",
       "readMsgID": "RPCChatTypes.MessageID | null"
     },

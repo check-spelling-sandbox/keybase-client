@@ -45,4 +45,4 @@ We keep the original ordinal if we can so the ordering of the thread from our pe
 
 ## Pending
 
-When we build a search for users we want to preview the conversation. We have a special conversationIDKey for this Constants.pendingConversationIDKey. This always exists in the metaMap. The users go into the participants property. Usually the convesationIDKey inside the meta is the same as the key in the metaMap but in this special instance the key of the preview conversation goes in there depending on the participants
+When we build a search for users we want to preview the conversation. We have a special conversationIDKey for this Constants.pendingConversationIDKey. This always exists in the metaMap. The users go into the participants property. Usually the conversationIDKey inside the meta is the same as the key in the metaMap but in this special instance the key of the preview conversation goes in there depending on the participants

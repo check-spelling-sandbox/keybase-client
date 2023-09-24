@@ -536,7 +536,7 @@ export const createMarkTeamAsRead = (payload: {readonly teamID: TeamsTypes.TeamI
   type: markTeamAsRead as typeof markTeamAsRead,
 })
 /**
- * Mark the converstation as unread to the given message ID
+ * Mark the conversation as unread to the given message ID
  */
 export const createMarkAsUnread = (payload: {
   readonly conversationIDKey: Types.ConversationIDKey
