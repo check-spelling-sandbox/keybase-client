@@ -312,7 +312,7 @@ func (l *LoaderContextG) merkleLookupTripleInPast(ctx context.Context, isPublic 
 	var leaf *libkb.MerkleGenericLeaf
 
 	// If we're trying to lookup a leaf from before the checkpoint, just bump forward to the checkpoint.
-	// The checkpoint is consindered to be a legitimate version of Tree.
+	// The checkpoint is considered to be a legitimate version of Tree.
 	if checkpoint != nil && root.Seqno < *checkpoint {
 		mctx.Debug("Bumping up pre-checkpoint merkle fetch to checkpoint at %d for %s", *checkpoint, leafID)
 		leaf, err = l.merkleLookupTripleAtCheckpoint(mctx, leafID, *checkpoint)
