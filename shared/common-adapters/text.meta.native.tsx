@@ -52,7 +52,7 @@ export function fontSizeToSizeStyle(fontSize: number): {fontSize: number; lineHe
 }
 
 const _metaData = (): {[K in TextType]: MetaType} => {
-  // you CANNOT spread these else the getters dissappear and your colors will be wrong
+  // you CANNOT spread these else the getters disappear and your colors will be wrong
   const whiteNegative = {
     get negative() {
       return Styles.globalColors.white
