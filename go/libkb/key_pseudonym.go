@@ -21,7 +21,7 @@ import (
 // to avoid that, when decrypting a message encrypted with a team key, a user has to loop through all the keys of all the
 // teams he is part of to find the right one. To avoid this, when encrypting for a team, the sender generates such a pseudonym
 // (which refers to the key it used to encrypt), sends it to the server and includes it as a recipient identifier for the
-// appropriare recipient payload box in the header of the saltpack message. When decrypting a saltpack message, a recipient
+// appropriate recipient payload box in the header of the saltpack message. When decrypting a saltpack message, a recipient
 // can ask the server if any of the recipient identifiers in the message correspond to known pseudonyms (for teams the user is part of),
 // and use the response from the server to identify which key to use for decryption. This mechanism substitutes an older kbfs based one
 // (which is still supported to allow decryptions of old saltpack messages).
