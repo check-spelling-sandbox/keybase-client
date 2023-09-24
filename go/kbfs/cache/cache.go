@@ -15,7 +15,7 @@ import (
 // Eviction only happens when Add() is called, and there's no background
 // goroutine for eviction.
 type Cache interface {
-	// Get tries to find and return data assiciated with key.
+	// Get tries to find and return data associated with key.
 	Get(key Measurable) (data Measurable, ok bool)
 	// Add adds or replaces data into the cache, associating it with key.
 	// Entries are evicted when necessary.
