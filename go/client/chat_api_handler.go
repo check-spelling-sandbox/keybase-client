@@ -605,7 +605,7 @@ type advertiseCommandsOptionsV1 struct {
 
 func (a advertiseCommandsOptionsV1) Check() error {
 	if len(a.Advertisements) == 0 {
-		return errors.New("must specify at least one commands advertiement")
+		return errors.New("must specify at least one commands advertisement")
 	}
 	for _, c := range a.Advertisements {
 		if len(c.Commands) == 0 {
