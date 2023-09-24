@@ -93,7 +93,7 @@ class SearchFilter extends React.PureComponent<Props, State> {
   focus = () => {
     // When focusOnMount is true so is state.focused.
     // This is to speed up the focus time when using focusOnMount
-    // So continue to focus() the input elemenet if both are true
+    // So continue to focus() the input element if both are true
     if (this.state.focused && !this.props.focusOnMount) {
       return
     }
