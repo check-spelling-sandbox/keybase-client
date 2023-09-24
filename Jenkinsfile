@@ -477,7 +477,7 @@ def testGoBuilds(prefix, packagesToTest, hasKBFSChanges) {
       fetchChangeTarget()
       def BASE_COMMIT_HASH = getBaseCommitHash()
       timeout(activity: true, time: 720, unit: 'SECONDS') {
-        // Ignore the `protocol` directory, autogeneration has some critques
+        // Ignore the `protocol` directory, autogeneration has some critiques
         sh "go list -f '{{.Dir}}' ./...  | fgrep -v kbfs | fgrep -v protocol | xargs realpath --relative-to=. | xargs golangci-lint run --new-from-rev ${BASE_COMMIT_HASH} --deadline 10m0s"
       }
     } else {
