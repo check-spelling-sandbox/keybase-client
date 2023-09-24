@@ -15,7 +15,7 @@ func FormatCurrency(mctx libkb.MetaContext, amount string, code stellar1.Outside
 	}
 	currency, ok := conf.Currencies[code]
 	if !ok {
-		return "", fmt.Errorf("FormatCurrency error: cannot find curency code %q", code)
+		return "", fmt.Errorf("FormatCurrency error: cannot find currency code %q", code)
 	}
 
 	return stellarnet.FmtCurrency(amount, rounding, currency.Symbol.Symbol, currency.Symbol.Postfix)
@@ -30,7 +30,7 @@ func FormatCurrencyWithCodeSuffix(mctx libkb.MetaContext, amount string, code st
 	}
 	currency, ok := conf.Currencies[code]
 	if !ok {
-		return "", fmt.Errorf("FormatCurrencyWithCodeSuffix error: cannot find curency code %q", code)
+		return "", fmt.Errorf("FormatCurrencyWithCodeSuffix error: cannot find currency code %q", code)
 	}
 	return stellarnet.FmtCurrencyWithCodeSuffix(amount, rounding, string(code), currency.Symbol.Symbol, currency.Symbol.Postfix)
 }
