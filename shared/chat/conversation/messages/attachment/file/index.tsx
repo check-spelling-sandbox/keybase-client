@@ -1,4 +1,4 @@
-import captialize from 'lodash/capitalize'
+import capitalize from 'lodash/capitalize'
 import * as React from 'react'
 import * as Kb from '../../../../../common-adapters'
 import * as Constants from '../../../../../constants/chat2'
@@ -34,7 +34,7 @@ const FileAttachment = React.memo(function FileAttachment(props: Props) {
     : isPathSaltpackSigned(props.fileName)
     ? Operations.Verify
     : undefined
-  const operationTitle = captialize(operation)
+  const operationTitle = capitalize(operation)
   return (
     <Kb.ClickableBox2 onLongPress={toggleMessageMenu} onClick={props.onDownload}>
       <ShowToastAfterSaving transferState={props.transferState} />
