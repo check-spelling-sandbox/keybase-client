@@ -48,7 +48,7 @@ const wrapInParagraph = (
 const wordBoundaryLookBehind = /\B$/
 // Wraps the match to also check that the behind is not a text, but a boundary (like a space)
 // i.e. "foo" fails but "foo " passes.
-const wordBoundryLookBehindMatch =
+const wordBoundaryLookBehindMatch =
   (matchFn: SimpleMarkdown.MatchFunction) =>
   (source: string, state: SimpleMarkdown.State, prevCapture: string) => {
     if (wordBoundaryLookBehind.exec(prevCapture)) {
@@ -101,13 +101,13 @@ const rules: {[type: string]: SimpleMarkdown.ParserRule} = {
     // original:
     // match: inlineRegex(/^~~(?=\S)([\s\S]*?\S)~~/),
     // ours: single tilde doesn't cross a newline
-    match: wordBoundryLookBehindMatch(SimpleMarkdown.inlineRegex(/^~((?:\\[\s\S]|[^\\\n])+?)~(?!~)/)),
+    match: wordBoundaryLookBehindMatch(SimpleMarkdown.inlineRegex(/^~((?:\\[\s\S]|[^\\\n])+?)~(?!~)/)),
   },
   em: {
     ...SimpleMarkdown.defaultRules.em,
     // original is pretty long so not inlining it here
     // ours: wrapped in _'s
-    match: wordBoundryLookBehindMatch(SimpleMarkdown.inlineRegex(/^_((?:\\[\s\S]|[^\\\n])+?)_(?!_)/)),
+    match: wordBoundaryLookBehindMatch(SimpleMarkdown.inlineRegex(/^_((?:\\[\s\S]|[^\\\n])+?)_(?!_)/)),
   },
   emoji: {
     match: SimpleMarkdown.inlineRegex(emojiRegex),
@@ -238,7 +238,7 @@ const rules: {[type: string]: SimpleMarkdown.ParserRule} = {
     // original
     // match: inlineRegex(/^\*\*((?:\\[\s\S]|[^\\])+?)\*\*(?!\*)/),
     // ours: single stars
-    match: wordBoundryLookBehindMatch(SimpleMarkdown.inlineRegex(/^\*((?:\\[\s\S]|[^\\\n])+?)\*(?!\*)/)),
+    match: wordBoundaryLookBehindMatch(SimpleMarkdown.inlineRegex(/^\*((?:\\[\s\S]|[^\\\n])+?)\*(?!\*)/)),
   },
   text: {
     ...SimpleMarkdown.defaultRules.text,

@@ -17,7 +17,7 @@ The [webfonts-generator](https://github.com/sunflowerdeath/webfonts-generator) l
 **Important svg configuration**
 
 - `fontSize` must be set to a power of 2 larger than `1000`. This is because any font size (same as the em square value) below `1000` will lead to inaccurate svg paths (looks lumpy or rounded). See this [issue on a discussion of font size issues](https://github.com/jesseweed/seti-ui/issues/401).
-- `descent` must be set to `0`. This is because `svgicons2svgfont` has poor `ascent/descent` calculations which can put icons on a half pixel boundry for its grid size, leading to anti-aliasing which causes blurriness.
+- `descent` must be set to `0`. This is because `svgicons2svgfont` has poor `ascent/descent` calculations which can put icons on a half pixel boundary for its grid size, leading to anti-aliasing which causes blurriness.
 
 ## Font Forge
 
