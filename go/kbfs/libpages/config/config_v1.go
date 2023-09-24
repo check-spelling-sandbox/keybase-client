@@ -165,7 +165,7 @@ func (c *V1) Encode(w io.Writer, prettify bool) error {
 // is invalid, or a nil-error if they are all valid.
 //
 // Although changes to per-path config fields have no effect on per-path config
-// checkings once the internal per-path config reader is intialized (see
+// checking once the internal per-path config reader is intialized (see
 // comment on V1), this method still checks the updated per-path config fields.
 // So it's OK to use Validate directly on a *V1 that has been modified since it
 // was initialized.
