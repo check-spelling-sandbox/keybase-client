@@ -721,7 +721,7 @@ func (j *JournalManager) EnableExistingJournals(
 				// Take a lock while inserting the conflict journal
 				// (even though we already have `journalLock`), since
 				// multiple workers could be running at once and we
-				// need to protect the cleared conflct TLF map from
+				// need to protect the cleared conflict TLF map from
 				// concurrent access.
 				conflictLock.Lock()
 				j.insertConflictJournalLocked(groupCtx, tj, fakeTlfID, t)
