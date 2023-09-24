@@ -58,7 +58,7 @@ func kbWriteSyso(vi *goversioninfo.VersionInfo, filename string, arch string, ic
 	// Create a new RSRC section
 	coff := coff.NewRSRC()
 
-	// Set the architechture
+	// Set the architecture
 	err := coff.Arch(arch)
 	if err != nil {
 		return err
