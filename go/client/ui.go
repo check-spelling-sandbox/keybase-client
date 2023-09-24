@@ -231,7 +231,7 @@ func (ui *IdentifyTrackUI) Confirm(_ libkb.MetaContext, o *keybase1.IdentifyOutc
 	case keybase1.TrackStatus_NEW_ZERO_PROOFS:
 		prompt = "We found an account for " + username +
 			", but they haven't proven their identity. Still follow them?"
-		ui.displayedProofs = true // If we ask for confimation to follow, we don't want to show the message about no proofs.
+		ui.displayedProofs = true // If we ask for confirmation to follow, we don't want to show the message about no proofs.
 		promptDefault = libkb.PromptDefaultYes
 	case keybase1.TrackStatus_NEW_FAIL_PROOFS:
 		verb := "follow"
