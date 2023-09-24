@@ -18,7 +18,7 @@ const FloatingPicker = <T extends string | number>(props: Props<T>) => {
         // Android bug: after selecting a new value (e.g. in
         // set-explode-popup), it flips to the new value, then back to the old
         // value, then to the new value. There is also a user report claiming
-        // it flips forever. So just force remounting when the selected avlue
+        // it flips forever. So just force remounting when the selected value
         // changes as a hacky fix.
         Styles.isAndroid ? props.selectedValue || 0 : undefined
       }
