@@ -434,7 +434,7 @@ func (sm *subscriptionManager) SubscribePath(ctx context.Context,
 	// folderBranch starts using the subscription manager somehow, we can add a
 	// "recently unsubscribed" cache to the subscription manager and move this
 	// lock further down. This cache should also mitigate the issue where the
-	// unsubscribe call gets deliverd before subscribe.
+	// unsubscribe call gets delivered before subscribe.
 	sm.lock.Lock()
 	defer sm.lock.Unlock()
 
