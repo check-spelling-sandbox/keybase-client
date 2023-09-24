@@ -71,7 +71,7 @@ type GlobalContext struct {
 	MobileAppState                   *MobileAppState             // The state of focus for the currently running instance of the app
 	DesktopAppState                  *DesktopAppState            // The state of focus for the currently running instance of the app
 	ChatHelper                       ChatHelper                  // conveniently send chat messages
-	RPCCanceler                      *RPCCanceler                // register live RPCs so they can be cancelleed en masse
+	RPCCanceler                      *RPCCanceler                // register live RPCs so they can be cancelled en masse
 	IdentifyDispatch                 *IdentifyDispatch           // get notified of identify successes
 	Identify3State                   *Identify3State             // keep track of Identify3 sessions
 	vidMu                            *sync.Mutex                 // protect VID
