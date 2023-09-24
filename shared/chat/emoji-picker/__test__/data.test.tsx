@@ -12,7 +12,7 @@ const searchIndexOmissions = [
 ].sort()
 
 describe('emoji data processing', () => {
-  it('nameMap containes all possible search results', () => {
+  it('nameMap contains all possible search results', () => {
     let containsAll = true
     Object.values(emojiIndex.emojis).forEach((emoji: any) => {
       // sometimes its a collection of things
