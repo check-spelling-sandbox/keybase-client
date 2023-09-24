@@ -74,7 +74,7 @@ func computeSecret(players []PlayerState) Secret {
 }
 
 // Flip takes all the completed PlayerStates from the game, makes sure they don't have
-// an error, and if not, outputs a PRNG from which arbirarily many ints, or bools,
+// an error, and if not, outputs a PRNG from which arbitrarily many ints, or bools,
 // can be deterministically plucked. If there's an error, PRNG will be nil.
 func Flip(cp CommitmentPayload, players []PlayerState) (*PRNG, error) {
 	err := checkPlayers(cp, players)
