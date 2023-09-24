@@ -2135,7 +2135,7 @@ type SubscriptionNotifier interface {
 	// OnPathChange notifies about a change that's related to a specific path.
 	// Multiple subscriptionIDs may be sent because a client can subscribe on
 	// the same path multiple times. In the future topics will become a single
-	// topic but we don't differeciate between the two topics for now so they
+	// topic but we don't differentiate between the two topics for now so they
 	// are just sent together if both topics are subscribed.
 	OnPathChange(
 		clientID SubscriptionManagerClientID, subscriptionIDs []SubscriptionID,
