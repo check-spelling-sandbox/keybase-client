@@ -564,7 +564,7 @@ func BenchmarkDecorateLinks(b *testing.B) {
 		"Up to WP 12 on XP",
 		"I had WP on Win and never had an issue with it.",
 		"WP had MSO beat 7 ways to sunday. Just didn't have the draconian marketing to keep it going",
-		"I've adapted to gui, reasonably well anywya",
+		"I've adapted to gui, reasonably well anyway",
 		"More of a cli-fan that finds gui handy, as long as it don't bury things too deep",
 		"Haven't liked MS Office since they added the ribbon. 2003 or 2007.",
 		"I've used win 8/8.1/10 enough to know I'm never going back.",
