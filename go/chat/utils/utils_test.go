@@ -323,7 +323,7 @@ func BenchmarkDecorateLinks(b *testing.B) {
 		"The buttons have been \"encrypted\" and the plaintext is still there.",
 		":joy: ",
 		"it looked like \"CASINO\" to me ",
-		"I like it, and I think that if you look at it closely you can see where it has \"CRYPTO\" almost hidden in the _charaters_. Same thing for the Try it button in the what's new.",
+		"I like it, and I think that if you look at it closely you can see where it has \"CRYPTO\" almost hidden in the _characters_. Same thing for the Try it button in the what's new.",
 		"Actually I like it!",
 		"Maybe a checkbox in settings to keep it if you want to?",
 		"As in, once you click on the tab, the text stays normal",
