@@ -535,7 +535,7 @@ typedef struct _DOKAN_OPERATIONS {
   * \brief GetDiskFreeSpace Dokan API callback
   *
   * Retrieves information about the amount of space that is available on a disk volume.
-  * It consits of the total amount of space, the total amount of free space, and
+  * It consists of the total amount of space, the total amount of free space, and
   * the total amount of free space available to the user that is associated with the calling thread.
   *
   * Neither GetDiskFreeSpace nor \ref GetVolumeInformation
