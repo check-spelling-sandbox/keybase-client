@@ -24,7 +24,7 @@ export const errorToActionOrThrow = (
   if (error?.code === RPCTypes.StatusCode.scidentifiesfailed) {
     // This is specifically to address the situation where when user tries to
     // remove a shared TLF from their favorites but another user of the TLF has
-    // deleted their account the subscribePath call cauused from the popup will
+    // deleted their account the subscribePath call caused from the popup will
     // get SCIdentifiesFailed error. We can't do anything here so just move on.
     // (Ideally we'd be able to tell it's because the user was deleted, but we
     // don't have that from Go right now.)
