@@ -1952,7 +1952,7 @@ type lfsProgressWriter struct {
 	oid                   string
 	start                 int
 	soFar                 int     // how much in absolute bytes has been copied
-	totalForCopy          int     // how much in absolue bytes will be copied
+	totalForCopy          int     // how much in absolute bytes will be copied
 	plaintextSize         int     // how much LFS expects to be copied
 	factorOfPlaintextSize float64 // what frac of the above size is this copy?
 }
