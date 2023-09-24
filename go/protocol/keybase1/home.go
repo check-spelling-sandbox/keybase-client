@@ -314,7 +314,7 @@ const (
 	HomeScreenTodoType_ADD_EMAIL               HomeScreenTodoType = 22
 	HomeScreenTodoType_AVATAR_USER             HomeScreenTodoType = 23
 	HomeScreenTodoType_CHAT                    HomeScreenTodoType = 24
-	HomeScreenTodoType_ANNONCEMENT_PLACEHOLDER HomeScreenTodoType = 10000
+	HomeScreenTodoType_ANNOUNCEMENT_PLACEHOLDER HomeScreenTodoType = 10000
 )
 
 func (o HomeScreenTodoType) DeepCopy() HomeScreenTodoType { return o }
@@ -338,7 +338,7 @@ var HomeScreenTodoTypeMap = map[string]HomeScreenTodoType{
 	"ADD_EMAIL":               22,
 	"AVATAR_USER":             23,
 	"CHAT":                    24,
-	"ANNONCEMENT_PLACEHOLDER": 10000,
+	"ANNOUNCEMENT_PLACEHOLDER": 10000,
 }
 
 var HomeScreenTodoTypeRevMap = map[HomeScreenTodoType]string{
@@ -360,7 +360,7 @@ var HomeScreenTodoTypeRevMap = map[HomeScreenTodoType]string{
 	22:    "ADD_EMAIL",
 	23:    "AVATAR_USER",
 	24:    "CHAT",
-	10000: "ANNONCEMENT_PLACEHOLDER",
+	10000: "ANNOUNCEMENT_PLACEHOLDER",
 }
 
 func (e HomeScreenTodoType) String() string {

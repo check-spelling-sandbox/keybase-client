@@ -142,7 +142,7 @@ func countKnownBadges(m libkb.HomeItemMap) int {
 		for todoType, v := range todoMap {
 			_, found := keybase1.HomeScreenTodoTypeRevMap[todoType]
 			if (itemType == keybase1.HomeScreenItemType_TODO && found) ||
-				(itemType == keybase1.HomeScreenItemType_ANNOUNCEMENT && todoType >= keybase1.HomeScreenTodoType_ANNONCEMENT_PLACEHOLDER) {
+				(itemType == keybase1.HomeScreenItemType_ANNOUNCEMENT && todoType >= keybase1.HomeScreenTodoType_ANNOUNCEMENT_PLACEHOLDER) {
 				ret += v
 			}
 		}

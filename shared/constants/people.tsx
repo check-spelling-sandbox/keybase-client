@@ -14,7 +14,7 @@ export const todoTypeEnumToType = invert(RPCTypes.HomeScreenTodoType) as {
 export const todoTypes: {[K in Types.TodoType]: Types.TodoType} = {
   addEmail: 'addEmail',
   addPhoneNumber: 'addPhoneNumber',
-  annoncementPlaceholder: 'annoncementPlaceholder', // misspelled in protocol
+  announcementPlaceholder: 'announcementPlaceholder', // misspelled in protocol
   avatarTeam: 'avatarTeam',
   avatarUser: 'avatarUser',
   bio: 'bio',
@@ -36,7 +36,7 @@ export const todoTypes: {[K in Types.TodoType]: Types.TodoType} = {
 export const todoTypeToInstructions: {[K in Types.TodoType]: string} = {
   addEmail: 'Add an email address for security purposes, and to get important notifications.',
   addPhoneNumber: 'Add your phone number so your friends can find you.',
-  annoncementPlaceholder: '',
+  announcementPlaceholder: '',
   avatarTeam: 'Change your team’s avatar from within the Keybase app.',
   avatarUser: 'Upload your profile picture, or an avatar.',
   bio: 'Add your name, bio, and location to complete your profile.',
@@ -63,7 +63,7 @@ export const todoTypeToInstructions: {[K in Types.TodoType]: string} = {
 export const todoTypeToConfirmLabel: {[K in Types.TodoType]: string} = {
   addEmail: 'Add email',
   addPhoneNumber: 'Add number',
-  annoncementPlaceholder: '',
+  announcementPlaceholder: '',
   avatarTeam: 'Edit team avatar',
   avatarUser: 'Upload avatar',
   bio: 'Edit Profile',
@@ -85,7 +85,7 @@ export const todoTypeToConfirmLabel: {[K in Types.TodoType]: string} = {
 export const todoTypeToIcon: {[K in Types.TodoType]: IconType} = {
   addEmail: 'icon-onboarding-email-add-48',
   addPhoneNumber: 'icon-onboarding-number-new-48',
-  annoncementPlaceholder: 'iconfont-close',
+  announcementPlaceholder: 'iconfont-close',
   avatarTeam: 'icon-onboarding-team-avatar-48',
   avatarUser: 'icon-onboarding-user-avatar-48',
   bio: 'icon-onboarding-user-info-48',
