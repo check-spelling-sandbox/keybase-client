@@ -109,7 +109,7 @@ func checkPendingOp(ctx context.Context,
 	case keybase1.AsyncOps_READ:
 		read := o.Read()
 		require.Equal(t, read.Path, src, "Expected matching path in operation")
-	// TODO: write is not asynce
+	// TODO: write is not async
 	case keybase1.AsyncOps_WRITE:
 		write := o.Write()
 		require.Equal(t, write.Path, src, "Expected matching path in operation")
