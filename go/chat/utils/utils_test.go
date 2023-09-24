@@ -477,7 +477,7 @@ func BenchmarkDecorateLinks(b *testing.B) {
 		"his fault :P",
 		"Syntactically probably more correct, however.",
 		"its google translate",
-		"That time it droped one of the commas.",
+		"That time it dropped one of the commas.",
 		"좋은 아침, 축복받은 날 러시아 친구. ",
 		"!ko Good morning and blessed day my Russian friend.",
 		"Something's lost in the translation.",
