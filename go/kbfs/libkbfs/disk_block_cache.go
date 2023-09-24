@@ -100,7 +100,7 @@ type DiskBlockCacheLocal struct {
 	// Track the number of blocks in the cache per TLF and overall.
 	tlfCounts map[tlf.ID]int
 	numBlocks int
-	// Track the number of blocks in the cahce per eviction priority,
+	// Track the number of blocks in the cache per eviction priority,
 	// for easy eviction counting.
 	priorityBlockCounts map[evictionPriority]int
 	priorityTlfMap      map[evictionPriority]map[tlf.ID]int
