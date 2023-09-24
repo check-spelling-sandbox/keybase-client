@@ -714,7 +714,7 @@ func (s SigID) Eq(t SigID) bool {
 type SigIDMapKey string
 
 // ToMapKey returns the string representation (hex-encoded) of a SigID with the hardcoded 0x0f suffix
-// (for backward comptability with on-disk storage).
+// (for backward compatibility with on-disk storage).
 func (s SigID) ToMapKey() SigIDMapKey {
 	return SigIDMapKey(s.StripSuffix().ToSigIDLegacy().String())
 }
