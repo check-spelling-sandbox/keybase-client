@@ -94,7 +94,7 @@ type Game struct {
 	clock                  func() clockwork.Clock
 	clogf                  func(ctx context.Context, fmt string, args ...interface{})
 
-	// To handle reorderings between CommitmentComplete and commitements,
+	// To handle reorderings between CommitmentComplete and commitments,
 	// wee need some extra bookkeeping.
 	iWasIncluded          bool
 	iOptedOutOfCommit     bool
