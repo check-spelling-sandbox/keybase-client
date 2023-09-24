@@ -484,7 +484,7 @@ func BenchmarkDecorateLinks(b *testing.B) {
 		"Good morning, blessed day, Russian friend. ",
 		"!en 좋은 아침, 축복받은 날, 러시아 친구.",
 		"im not sure",
-		"Does Korean lack conjuctions?",
+		"Does Korean lack conjunctions?",
 		"좋은 아침, 축복받은 날, 러시아 친구. ",
 		"!ko Доброе утро и благословенный день, мой русский друг.",
 		"어떻게 지내? ",
