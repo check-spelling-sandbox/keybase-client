@@ -96,7 +96,7 @@ func TestRenameOverMultiblockFile(t *testing.T) {
 }
 
 // bob writes a second copy of a multiblock file written by alice
-// (tests dedupping, but hard to verify that precisely here).
+// (tests deduping, but hard to verify that precisely here).
 func TestCopyMultiblockFile(t *testing.T) {
 	test(t,
 		blockSize(20), users("alice", "bob"),
