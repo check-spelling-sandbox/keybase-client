@@ -75,7 +75,7 @@ type RatchetObj struct {
 
 // Ratchet is an object that's used in the teams/teams* and teams/transaction* world to make a visible team chain
 // link incorporate one hidden team ratchet. This means we have to post data both into the signature field (the blinded ratchet)
-// and also data into the sig POST, the blinding keys, etc. This little object conveniniently encapsulates all of that.
+// and also data into the sig POST, the blinding keys, etc. This little object conveniently encapsulates all of that.
 type Ratchet struct {
 	encoded EncodedRatchetBlindingKeySet
 	decoded RatchetObj
