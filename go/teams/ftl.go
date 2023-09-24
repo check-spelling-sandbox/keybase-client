@@ -609,7 +609,7 @@ func (s shoppingList) onlyNeedsRefresh() bool {
 
 // addDownPointer adds a down pointer to our shopping list. If we need to read naming information
 // out of a parent team, we'll add the corresponding sequence number here. The we expect the
-// payload JSON for the corrsponding seqno -- that we already have the wrapper chainlink v2
+// payload JSON for the corresponding seqno -- that we already have the wrapper chainlink v2
 // that contains the hash of this payload JSON.
 func (s *shoppingList) addDownPointer(seqno keybase1.Seqno) {
 	s.downPointers = append(s.downPointers, seqno)
