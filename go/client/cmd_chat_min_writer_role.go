@@ -39,10 +39,10 @@ Only allow team admins to write
     keybase chat min-writer-role keybasefriends --role admin
 
 Only allow team admins to write on a specific channel
-    keybase chat min-writer-role keybasefriends --channel '#annoucements' --role admin
+    keybase chat min-writer-role keybasefriends --channel '#announcements' --role admin
 
 Disable a previously set policy
-    keybase chat min-writer-role keybasefriends --channel '#annoucements' --role none
+    keybase chat min-writer-role keybasefriends --channel '#announcements' --role none
 `,
 		ArgumentHelp: "[conversation]",
 		Action: func(c *cli.Context) {
