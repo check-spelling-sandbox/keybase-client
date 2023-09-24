@@ -34,7 +34,7 @@ NSString *NSStringFromKBRInstallAction(KBRInstallAction action);
 
 - (BOOL)needsInstallOrUpgrade;
 
-- (NSString *)statusDescription:(NSString *)delimeter;
+- (NSString *)statusDescription:(NSString *)delimiter;
 
 - (GHODictionary *)statusInfo;
 

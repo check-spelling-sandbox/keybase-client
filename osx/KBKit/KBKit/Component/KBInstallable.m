@@ -56,16 +56,16 @@ const NSTimeInterval KBDefaultTaskTimeout = 180.0;
   return YES;
 }
 
-- (NSArray *)installDescription:(NSString *)delimeter {
+- (NSArray *)installDescription:(NSString *)delimiter {
   NSMutableArray *desc = [NSMutableArray array];
   if (self.error) {
     [desc addObject:NSStringWithFormat(@"Install Error: %@", self.error.localizedDescription)];
   }
-  [desc addObjectsFromArray:[self statusDescription:delimeter]];
+  [desc addObjectsFromArray:[self statusDescription:delimiter]];
   return desc;
 }
 
-- (NSArray *)statusDescription:(NSString *)delimeter {
+- (NSArray *)statusDescription:(NSString *)delimiter {
   NSMutableArray *status = [NSMutableArray array];
   if (self.isInstallDisabled) {
     [status addObject:@"Install Disabled"];
@@ -73,7 +73,7 @@ const NSTimeInterval KBDefaultTaskTimeout = 180.0;
   if (self.componentStatus.error) {
     [status addObject:NSStringWithFormat(@"Error: %@", self.componentStatus.error.localizedDescription)];
   }
-  [status gh_addObject:[self.componentStatus statusDescription:delimeter]];
+  [status gh_addObject:[self.componentStatus statusDescription:delimiter]];
   return status;
 }
 

@@ -62,7 +62,7 @@
   }
 
   if ([strings count] == 0) return nil;
-  return [KBText join:strings delimeter:[[NSAttributedString alloc] initWithString:@"  " attributes:attributes]];
+  return [KBText join:strings delimiter:[[NSAttributedString alloc] initWithString:@"  " attributes:attributes]];
 }
 
 @end

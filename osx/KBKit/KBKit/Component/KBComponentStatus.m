@@ -97,7 +97,7 @@
   return info;
 }
 
-- (NSString *)statusDescription:(NSString *)delimeter {
+- (NSString *)statusDescription:(NSString *)delimiter {
   NSMutableArray *str = [NSMutableArray array];
   [str addObject:NSStringFromKBRInstallStatus(_installStatus)];
   
@@ -105,7 +105,7 @@
   for (id key in _info) {
     [infos addObject:NSStringWithFormat(@"%@: %@", key, _info[key])];
   }
-  if ([infos count] > 0) [str addObject:[infos join:delimeter]];
+  if ([infos count] > 0) [str addObject:[infos join:delimiter]];
 
   return [str join:@", "];
 }
