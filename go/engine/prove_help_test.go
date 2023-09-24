@@ -371,7 +371,7 @@ func proveGubbleSocialFail(tc libkb.TestContext, fu *FakeUser, sigVersion libkb.
 
 func checkFailed(t testing.TB) {
 	if t.Failed() {
-		// The test failed. Possibly in anothe goroutine. Look earlier in the logs for the real failure.
+		// The test failed. Possibly in another goroutine. Look earlier in the logs for the real failure.
 		require.FailNow(t, "test already failed")
 	}
 }
