@@ -44,7 +44,7 @@ chk() {
     stat -c "%a %U" "$1"
 }
 echo "Waypoint: check file perms"
-# Check permissions are correctr - 7 or 6 for directories and files so user
+# Check permissions are correct - 7 or 6 for directories and files so user
 # can read/write them, and make sure files are owned by the installing user and not root.
 [[ "$(chk "$HOME"/)"                                      =~  7[0-9]{2}."$U" ]]
 [[ "$(chk "$HOME"/.cache)"                                =~  7[0-9]{2}."$U" ]]
