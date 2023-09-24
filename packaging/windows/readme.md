@@ -12,7 +12,7 @@
 - [git for windows](https://git-scm.com/downloads)
 
   - Select "Use Git and optional Unix tools from the Command Prompt" (so scripts with `rm` will work)
-  - Checkout as-is, conmmit Unix style line endings
+  - Checkout as-is, commit Unix style line endings
   - Use Windows' default console window (especially on Windows 10)
 
 - Open a command console and make a directory for cloning the repo, e.g.:
