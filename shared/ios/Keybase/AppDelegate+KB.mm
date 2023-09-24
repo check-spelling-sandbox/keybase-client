@@ -81,7 +81,7 @@
   // landscape while the app was in the background, the resignImageView
   // in the snapshot would not be covering the entire app and would
   // display content in the app.  The following code makes the
-  // image view a square in the largest dimensipn of the device so
+  // image view a square in the largest dimension of the device so
   // that when the iPad OS makes the snapshots the image view is
   // covering in both orientations.
   CGRect screenRect = [UIScreen mainScreen].bounds;
