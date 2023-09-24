@@ -356,7 +356,7 @@ protocol teams {
   }
 
   enum RatchetType {
-    // Ratchets that come as "down pointers" from the main team chean.
+    // Ratchets that come as "down pointers" from the main team chain.
     MAIN_0,
     // Ratchets that come from the blinded merkle tree for this team.
     BLINDED_1,
