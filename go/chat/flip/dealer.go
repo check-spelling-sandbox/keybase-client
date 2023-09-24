@@ -306,7 +306,7 @@ func (g *Game) doFlip(ctx context.Context, prng *PRNG) error {
 	return nil
 }
 
-func (g *Game) playerCommitedInTime(ps *GamePlayerState, now time.Time) bool {
+func (g *Game) playerCommittedInTime(ps *GamePlayerState, now time.Time) bool {
 	diff := ps.commitmentTime.Sub(g.start)
 	return diff < g.params.CommitmentWindowWithSlack(true)
 }
@@ -431,7 +431,7 @@ func (g *Game) handleCommitmentComplete(ctx context.Context, sender UserDevice, 
 
 	// for now, just warn if users who made it in on time weren't included.
 	for _, ps := range g.players {
-		if !ps.included && g.playerCommitedInTime(ps, now) && g.clogf != nil {
+		if !ps.included && g.playerCommittedInTime(ps, now) && g.clogf != nil {
 			g.clogf(ctx, "User %s wasn't included, but they should have been", ps.ud)
 		}
 	}

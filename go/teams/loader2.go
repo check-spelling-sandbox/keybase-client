@@ -179,7 +179,7 @@ var whitelistedTeamLinkSigsForKeyInUserSigchain = []keybase1.SigID{
 	// with a downgrade lease acquisition for a key revoke on a slow connection. The acquisition should have
 	// been blocked until the merkle tree reflected the leave, but the acquisition actually happened before the
 	// team leave transation was committed to the DB. The fix on the server is to check for leases before and
-	// after the team change is commited (in the same transaction). We were previously only checking before.
+	// after the team change is committed (in the same transaction). We were previously only checking before.
 	// It has been fixed in Y2K-891.
 	"c641d1246493cf04ec2c6141acdb569a457c02d577b392d4eb1872118c563c2822",
 }
