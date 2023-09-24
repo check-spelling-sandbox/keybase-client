@@ -68,7 +68,7 @@ func GetPlatformSpecificMountOptionsForTest() []fuse.MountOption {
 		fuse.OSXFUSELocations(kbfusePath, fuse.OSXFUSELocationV3),
 		fuse.ExclCreate(),
 
-		// We are diabling the 'local' mount option in tests for now since it
+		// We are disabling the 'local' mount option in tests for now since it
 		// causes out tests to leave a bunch of entries behind in Finder's sidebar.
 		// TODO: fix this.
 		// fuse.LocalVolume(),
