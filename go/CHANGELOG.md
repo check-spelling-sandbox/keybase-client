@@ -125,7 +125,7 @@
 - Fix help topics to only display when 'help' is the parent command
 - SaltPack: explain alternatives for failed encryption, and also
   be smart about decryption using the wrong command on the wrong type
-  of stream; suggest alterntives. (PR: keybase/client#1633)
+  of stream; suggest alternatives. (PR: keybase/client#1633)
 - service: hook Identify2 RPC up to engine (PR: keybase/client#1662)
 - openpgp: ignore broken signature packets, since some keys are mangled
   due to misbehaving clients and/or key servers (via vendored PR: keybase/go-crypto#4)
