@@ -266,7 +266,7 @@ func (e ServerErrorThrottle) ToStatus() (s keybase1.Status) {
 	return
 }
 
-// ServerErrorConditionFailed is returned when a conditonal write failed.
+// ServerErrorConditionFailed is returned when a conditional write failed.
 // This means there was a race and the caller should consider it a conflict.
 type ServerErrorConditionFailed struct {
 	Err            error
