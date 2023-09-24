@@ -657,7 +657,7 @@ func TestStoragePagination(t *testing.T) {
 	fetchRes, err = storage.Fetch(context.TODO(), conv, uid, nil, nil, &p)
 	require.NoError(t, err)
 	res = fetchRes.Thread
-	require.Equal(t, chat1.MessageID(219), msgs[81].GetMessageID(), "wrong msg id at broder")
+	require.Equal(t, chat1.MessageID(219), msgs[81].GetMessageID(), "wrong msg id at border")
 	require.Equal(t, 100, len(res.Messages), "wrong amount of messages")
 	for i := 0; i < len(res.Messages); i++ {
 		require.Equal(t, msgs[i+81].GetMessageID(), res.Messages[i].GetMessageID(), "msg mismatch")
