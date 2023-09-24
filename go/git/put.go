@@ -14,7 +14,7 @@ import (
 
 func PutMetadata(ctx context.Context, g *libkb.GlobalContext, arg keybase1.PutGitMetadataArg) error {
 	teamer := NewTeamer(g)
-	cryptoer := NewCrypto(g)
+	crypter := NewCrypto(g)
 	mctx := libkb.NewMetaContext(ctx, g)
 
 	teamIDVis, err := teamer.LookupOrCreate(ctx, arg.Folder)
@@ -35,7 +35,7 @@ func PutMetadata(ctx context.Context, g *libkb.GlobalContext, arg keybase1.PutGi
 	if err != nil {
 		return fmt.Errorf("encoding git metadata:%v", err)
 	}
-	encryptedMetadata, err := cryptoer.Box(ctx, msgpackLocalMetadata, teamIDVis)
+	encryptedMetadata, err := crypter.Box(ctx, msgpackLocalMetadata, teamIDVis)
 	if err != nil {
 		return err
 	}

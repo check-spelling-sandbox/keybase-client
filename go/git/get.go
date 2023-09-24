@@ -209,7 +209,7 @@ func getMetadataInner(ctx context.Context, g *libkb.GlobalContext, folder *keyba
 func getMetadataInnerSingle(ctx context.Context, g *libkb.GlobalContext,
 	folder *keybase1.FolderHandle, responseRepo ServerResponseRepo) (info *keybase1.GitRepoInfo, skip bool, err error) {
 
-	cryptoer := NewCrypto(g)
+	crypter := NewCrypto(g)
 
 	// If the folder was passed in, use it. Otherwise, load the team to
 	// figure it out.
@@ -262,7 +262,7 @@ func getMetadataInnerSingle(ctx context.Context, g *libkb.GlobalContext,
 		N:   nonce,
 		Gen: responseRepo.KeyGeneration,
 	}
-	msgpackPlaintext, err := cryptoer.Unbox(ctx, teamIDVis, &encryptedMetadata)
+	msgpackPlaintext, err := crypter.Unbox(ctx, teamIDVis, &encryptedMetadata)
 	if err != nil {
 		return nil, false, fmt.Errorf("repo tid:%v visibility:%s: %v", teamIDVis.TeamID, teamIDVis.Visibility, err)
 	}
