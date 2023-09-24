@@ -203,7 +203,7 @@ export default Container.connect(
         // semi-transparent footer.
         //
         // TODO: add `footerRows` and inject these from destination-picker, so that
-        // Rows componenet don't need to worry about whether it's in
+        // Rows component don't need to worry about whether it's in
         // destinationPicker mode or not.
         (!isMobile && typeof o.destinationPickerIndex === 'number'
           ? [
