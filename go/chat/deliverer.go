@@ -260,7 +260,7 @@ func (s *Deliverer) Queue(ctx context.Context, convID chat1.ConversationID, msg 
 
 	// Alert the deliver loop it should wake up
 	s.msgSentCh <- struct{}{}
-	// Only update mtime badgable messages
+	// Only update mtime badgeable messages
 	if obr.Msg.IsBadgableType() {
 		go func(ctx context.Context) {
 			update := []chat1.LocalMtimeUpdate{{ConvID: convID, Mtime: obr.Ctime}}
