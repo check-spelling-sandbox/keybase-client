@@ -2023,7 +2023,7 @@ func TestPrefetcherReschedules(t *testing.T) {
 	// We can't close the done channel right away since the prefetcher
 	// still needs to send on it for every remaining operation it
 	// processes, so just spawn a goroutine to drain it, and close the
-	// channel when the test is over. (The defered close is at the top
+	// channel when the test is over. (The deferred close is at the top
 	// of this function.)
 	go func() {
 		for range prefetchDoneCh {
