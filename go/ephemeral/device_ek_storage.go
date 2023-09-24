@@ -509,7 +509,7 @@ func (s *DeviceEKStorage) DeleteExpired(mctx libkb.MetaContext, merkleRoot libkb
 // following scenario:
 //
 // At t=0, deviceA creates deviceEK_A_1 and userEK_1. At t=0.5, deviceB creates
-// devicekEK_B_1. At t=1, deviceEK_A_2 and userEK_2 are created and at t=1.5
+// deviceEK_B_1. At t=1, deviceEK_A_2 and userEK_2 are created and at t=1.5
 // deviceEK_B_2 is created. deviceEK_B_1 cannot be deleted until userEK_2 is
 // expired, or deviceB will delete it's deviceEK early. Since userEK_3 has not
 // yet been created, we may have to keep deviceEK_B_1 around until userEK_2 is

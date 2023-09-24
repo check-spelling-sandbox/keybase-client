@@ -173,7 +173,7 @@ func (e *Login) loginProvision(m libkb.MetaContext) (bool, error) {
 	if ueng.User().HasCurrentDeviceInCurrentInstall() {
 		// Somehow after loading a user we discovered that we are already
 		// provisioned. This should not happen.
-		m.Debug("loginProvisionedDevice after loginLoadUser (and user had current deivce in current install), failed to login [unexpected]")
+		m.Debug("loginProvisionedDevice after loginLoadUser (and user had current device in current install), failed to login [unexpected]")
 		return false, libkb.DeviceAlreadyProvisionedError{}
 	}
 
