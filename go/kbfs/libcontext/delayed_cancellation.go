@@ -11,7 +11,7 @@ import (
 	"golang.org/x/net/context"
 )
 
-// This file defines a set of functions for delaying context concellations.
+// This file defines a set of functions for delaying context cancelations.
 // It's a hacky implementation and some functions require extra caution in when
 // they should be called.
 //
