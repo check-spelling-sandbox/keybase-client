@@ -546,7 +546,7 @@ func BenchmarkDecorateLinks(b *testing.B) {
 		"Uncle did, August Dvorak",
 		"In college I was proficient equally with that and QWERTY.",
 		"Loved his keyboard, but don't use it anymore.",
-		"Never hear a single one, nor read anyting from him.",
+		"Never hear a single one, nor read anything from him.",
 		"Dvorak",
 		"Which he never claimed anyway.",
 		"I was \"online\" years before Gore \"invented\" the Internet",
