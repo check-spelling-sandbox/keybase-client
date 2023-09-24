@@ -600,7 +600,7 @@ func (e *fsEngine) Lookup(u User, parentDir Node, name string) (file Node, symPa
 	}
 	// Return if not a symlink
 	// TODO currently we pretend that Dokan has no symbolic links
-	// here and end up deferencing them. This works but is not
+	// here and end up dereferencing them. This works but is not
 	// ideal. (See GetRootDir.)
 	if fi.Mode()&os.ModeSymlink == 0 || e.name == "dokan" {
 		return fsNode{path}, "", nil
