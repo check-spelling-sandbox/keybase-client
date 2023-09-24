@@ -96,7 +96,7 @@
       "startupPushPayload?": "string"
     },
     "setStartupFile": {
-      "_description": "Stores the startup file path when launching Keybase from a cold start beofre log in",
+      "_description": "Stores the startup file path when launching Keybase from a cold start before log in",
       "startupFile": "HiddenString"
     },
     "setOpenAtLogin": {"openAtLogin": "boolean"},

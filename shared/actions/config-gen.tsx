@@ -131,7 +131,7 @@ export const createSetWhatsNewLastSeenVersion = (payload: {readonly lastSeenVers
   type: setWhatsNewLastSeenVersion as typeof setWhatsNewLastSeenVersion,
 })
 /**
- * Stores the startup file path when launching Keybase from a cold start beofre log in
+ * Stores the startup file path when launching Keybase from a cold start before log in
  */
 export const createSetStartupFile = (payload: {readonly startupFile: HiddenString}) => ({
   payload,
