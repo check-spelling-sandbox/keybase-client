@@ -124,7 +124,7 @@ func TestPRNGCornerCases(t *testing.T) {
 	r := prng.Big(m)
 	require.Equal(t, 0, m.Cmp(r))
 
-	// The caase of the 1 modulus is handled normally but let's test
+	// The case of the 1 modulus is handled normally but let's test
 	// that it works.
 	m = big.NewInt(1)
 	r = prng.Big(m)
