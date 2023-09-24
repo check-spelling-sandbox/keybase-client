@@ -343,7 +343,7 @@ function updateIconConstants() {
   console.log('Generating icon constants (from the following directories)')
   console.log('\t*' + pngAssetDirPaths.map(({assetDirPath}) => assetDirPath).join('\n\t*'))
 
-  // Build constants for the png assests.
+  // Build constants for the png assets.
   const icons = pngAssetDirPaths.reduce((prevIcons, {assetDirPath, insertFn}) => {
     // Don't include @2x and @3x assets in icon-constants-gen.
     // They are included later in srcSet generation by icon.*.tsx
