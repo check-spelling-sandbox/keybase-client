@@ -75,7 +75,7 @@ export const InviteByContact = (props: InviteByContactProps) => {
   )
 
   let {listItems} = props
-  // Remember if we have any data before appying filtering.
+  // Remember if we have any data before applying filtering.
   const hasItems = listItems.length > 0
   if (filterValue) {
     listItems = listItems.filter(row =>
