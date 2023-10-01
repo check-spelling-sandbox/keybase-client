@@ -182,7 +182,7 @@ const darwinInstall = (dispatch: (action: TypedActions) => void, callback: CB) =
 
     if (errors.length > 0) {
       logger.info(errors.join('\n'))
-      logger.info('[Installer]: Install errorred')
+      logger.info('[Installer]: Install error')
       const buttons = errorTypes.fuse || errorTypes.kbnm ? ['Okay'] : ['Ignore', 'Quit']
       const detail = errors.join('\n') + `\n\nPlease run \`keybase log send\` to report the error.`
       const message = 'Keybase Install Error'
