@@ -27,7 +27,7 @@ var tests = map[string]string{
 	"bbb\\raaa": "bbb\\raaa",
 	"bbb/raaa":  "bbb/raaa",
 
-	// newline and tab are preserved, even in combination with other escpae codes
+	// newline and tab are preserved, even in combination with other escape codes
 	"\n":                 "\n",
 	"\t":                 "\t",
 	"bbb\naaa":           "bbb\naaa",
