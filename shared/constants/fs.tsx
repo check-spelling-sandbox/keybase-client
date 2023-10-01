@@ -534,7 +534,7 @@ export const isOfflineUnsynced = (
 // * When calculating number of TLFs being badged, a TLF should be counted if
 //   and only if this function returns true.
 // * When an individual TLF is shown (e.g. as a row), it should be badged if
-//   and only if this funciton returns true.
+//   and only if this function returns true.
 //
 // If we add more badges, this function should be updated.
 export const tlfIsBadged = (tlf: Types.Tlf) => !tlf.isIgnored && tlf.isNew
