@@ -880,7 +880,7 @@ const createChannel = async (
     // No error if we get here.
     const newConversationIDKey = result ? ChatTypes.conversationIDToKey(result.conv.info.id) : null
     if (!newConversationIDKey) {
-      logger.warn('No convoid from newConvoRPC')
+      logger.warn('No convid from newConvoRPC')
       return
     }
 
