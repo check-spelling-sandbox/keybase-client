@@ -37,7 +37,7 @@ multiple icons with the same counter.
     * `View` > `Go To` (`cmd` + `shift` + `>`)
     * Search using `{counter}-kb-iconfont-{name}-{size}.svg` (E.g. `172-kb-iconfont....`)
 8. Ensure that no icon in the iconfont is an entirely black box (this occurs if the "icon area" layer is still 100% opaque. It should be transparent even if it has no fill)
-9. Ensure that no icon in the iconfont is invereted (icon path & white space are invereted/switch). If this ocurred, then the SVG in Sketch was layerd/grouped/highlihgted incorrectly. Post in #design.
+9. Ensure that no icon in the iconfont is invereted (icon path & white space are invereted/switch). If this ocurred, then the SVG in Sketch was layerd/grouped/highlighted incorrectly. Post in #design.
 
 ### Dependencies
 
