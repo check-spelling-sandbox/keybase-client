@@ -185,7 +185,7 @@ func (c *chatClient) consumeReveal(t *testing.T) {
 	require.NotNil(t, msg.Reveal)
 }
 
-func (c *chatClient) consumeAbsteneesError(t *testing.T, n int) {
+func (c *chatClient) consumeAbsenteesError(t *testing.T, n int) {
 	msg := <-c.dealer.UpdateCh()
 	require.Error(t, msg.Err)
 	ae, ok := msg.Err.(AbsenteesError)
@@ -441,7 +441,7 @@ func testAbsentees(t *testing.T, nTotal int, nAbsentees int) {
 	forAllClients(clients, func(c *chatClient) { c.consumeCommitmentComplete(t, nTotal) })
 	forAllClients(clients, func(c *chatClient) { nTimes(present, func() { c.consumeReveal(t) }) })
 	srv.clock.Advance(time.Duration(31001) * time.Millisecond)
-	forAllClients(clients, func(c *chatClient) { c.consumeAbsteneesError(t, nAbsentees) })
+	forAllClients(clients, func(c *chatClient) { c.consumeAbsenteesError(t, nAbsentees) })
 
 	_, err = Replay(ctx, clients[0], srv.gameHistories[GameIDToKey(gameID)])
 	require.Error(t, err)
