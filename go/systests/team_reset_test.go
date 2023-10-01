@@ -716,7 +716,7 @@ func testTeamReAddAfterReset(t *testing.T, pukful, adminOwner, removeAfterReset 
 	}
 
 	if pukful {
-		// Bob should have been synchronously made a cyrptomember by re-add.
+		// Bob should have been synchronously made a cryptomember by re-add.
 		require.Equal(t, true, pollFn(0))
 	} else {
 		// A background task should upgrade bob from an invite to a cryptomember.
