@@ -23,7 +23,7 @@ export default Container.connect(
     const syncConfig = Constants.getTlfFromPath(stateProps._tlfs, tlfPath).syncConfig
     return {
       // Disable sync when the TLF is empty and it's not enabled yet.
-      // Band-aid fix for when new user has a non-exisitent TLF which we
+      // Band-aid fix for when new user has a nonexistent TLF which we
       // can't enable sync for yet.
       hideSyncToggle:
         syncConfig.mode === Types.TlfSyncMode.Disabled &&
