@@ -194,7 +194,7 @@ func ExtractExpansionObj(expansionID string, expansionJSON string) (expansionObj
 		return nil, fmt.Errorf("expansion %s does not exist", expansionID)
 	}
 
-	// verify the hash of the expansion object payload matches the expension id
+	// verify the hash of the expansion object payload matches the expansion id
 	objBytes, err := json.Marshal(expansion.Obj)
 	if err != nil {
 		return nil, err
