@@ -153,7 +153,7 @@ the app. So there isn't a real difference.
 * Use an alternate routing scheme that will load the screens when required or
   when idle.
   * this is involved, but we are doing this anyways. It would have a huge
-    impact since we wait around 2s everytime before we can do anything! That's
+    impact since we wait around 2s every time before we can do anything! That's
     2s from the point we can start running JS to the point we've required all
     the files we need to start the bootstrap process.
 * Minimal time to engine handshake. By requiring less files before we can start

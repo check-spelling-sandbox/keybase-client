@@ -20,7 +20,7 @@ class List2<T> extends React.PureComponent<Props<T>> {
   }
 
   // This has to be a separate variable since if we construct it inside render
-  // it's a new function everytime, and that triggers react-window to unmount
+  // it's a new function every time, and that triggers react-window to unmount
   // all rows and mount again.
   _row = ({index, style}) => <div style={style}>{this.props.renderItem(index, this.props.items[index])}</div>
 

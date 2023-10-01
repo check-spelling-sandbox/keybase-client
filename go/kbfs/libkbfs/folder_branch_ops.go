@@ -386,7 +386,7 @@ type folderBranchOps struct {
 	rootWaits          kbfssync.RepeatedWaitGroup
 
 	muLastGetHead sync.Mutex
-	// We record a timestamp everytime getHead or getTrustedHead is called, and
+	// We record a timestamp every time getHead or getTrustedHead is called, and
 	// use this as a heuristic for whether user is actively using KBFS. If user
 	// has been generating KBFS activities recently, it makes sense to try to
 	// reconnect as soon as possible in case of a deployment causes
