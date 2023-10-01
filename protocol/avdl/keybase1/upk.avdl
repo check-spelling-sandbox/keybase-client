@@ -77,7 +77,7 @@ protocol UPK {
       UID uid;
       string username;
       Seqno eldestSeqno;
-      // =0 for healty users, and 216 for deleted users
+      // =0 for healthy users, and 216 for deleted users
       StatusCode status;
       // Sorted by generation ascending
       array<PerUserKey> perUserKeys;
