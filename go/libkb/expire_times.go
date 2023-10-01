@@ -9,7 +9,7 @@ func (g *GlobalContext) HonorPGPExpireTime(t int64) int64 { return t }
 
 // HonorSigchainExpireTime determines whether expiration time on sigchain links should
 // be honored or ignored. When keybase first started in 2014, there were some links
-// that were intended to expire in 5 years. With the benefit of 5 years of expirience,
+// that were intended to expire in 5 years. With the benefit of 5 years of experience,
 // we can now see little security rationale for this expiration, but tons of churn
 // if we decided to force key rotations. So return "0" to mean we no longer will
 // expire these keys automatically. They can of course be explicitly revoked. If you
