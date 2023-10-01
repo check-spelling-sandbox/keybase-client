@@ -2146,7 +2146,7 @@ func (k *SimpleFS) doGetRevisions(
 		// revision could have slid off the previous revisions
 		// list because that revision was garbage-collected, but
 		// that doesn't guarantee that the older revision of the
-		// file was garabge-collected too (since it was created,
+		// file was garbage-collected too (since it was created,
 		// not deleted, as of that garbage-collected revision).
 		p := keybase1.NewPathWithKbfsArchived(keybase1.KBFSArchivedPath{
 			Path: pathStr,
