@@ -1519,7 +1519,7 @@ func (b *Boxer) GetEncryptionInfo(ctx context.Context, msg *chat1.MessagePlainte
 		//     introduce yet another caching layer, but EKs change more
 		//     frequently than devices in general.
 		//   - It leaves us more flexibility in the future. If say we
-		//     introduce a best-effort rekey mechanism for ephmeral keys,
+		//     introduce a best-effort rekey mechanism for ephemeral keys,
 		//     existing pairwise MACs will Just Work™ after a rekey.
 		shouldPairwiseMAC, recipients, err := globals.CtxKeyFinder(ctx, b.G()).ShouldPairwiseMAC(
 			ctx, tlfName, msg.ClientHeader.Conv.Tlfid, membersType, msg.ClientHeader.TlfPublic)
