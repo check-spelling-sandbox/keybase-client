@@ -137,7 +137,7 @@ var vinfo = dokan.VolumeInformation{
 
 // GetVolumeInformation returns information about the whole filesystem for dokan.
 func (f *FS) GetVolumeInformation(ctx context.Context) (dokan.VolumeInformation, error) {
-	// TODO should this be explicitely refused to other users?
+	// TODO should this be explicitly refused to other users?
 	// As the mount is limited to current session there is little need.
 	return vinfo, nil
 }
