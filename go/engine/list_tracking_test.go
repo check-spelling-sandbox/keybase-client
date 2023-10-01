@@ -25,7 +25,7 @@ func TestListTracking(t *testing.T) {
 
 func _verifyListTrackingEntries(entries []keybase1.UserSummary) error {
 	if len(entries) != 2 {
-		return fmt.Errorf("Num tracks: %d, exected 2.", len(entries))
+		return fmt.Errorf("Num tracks: %d, expected 2.", len(entries))
 	}
 
 	alice := entries[0]
@@ -131,7 +131,7 @@ func TestListTrackingLocal(t *testing.T) {
 
 	entries := eng.TableResult().Users
 	if len(entries) != 2 {
-		t.Errorf("Num tracks: %d, exected 2", len(entries))
+		t.Errorf("Num tracks: %d, expected 2", len(entries))
 	}
 }
 

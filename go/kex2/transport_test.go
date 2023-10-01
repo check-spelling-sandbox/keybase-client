@@ -405,7 +405,7 @@ as though a harpoon were sparring for the kill.`
 			t.Fatal(err)
 		} else if n == 0 {
 			if err != ErrAgain {
-				t.Fatalf("exepcted ErrAgain if we read 0 bytes, but got %v", err)
+				t.Fatalf("expected ErrAgain if we read 0 bytes, but got %v", err)
 			}
 			break
 		} else {
