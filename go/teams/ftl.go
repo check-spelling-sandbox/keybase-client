@@ -381,7 +381,7 @@ func (f *FastTeamChainLoader) deriveKeyForApplicationAtGeneration(m libkb.MetaCo
 	return applicationKeyForMask(rkm, seed)
 }
 
-// deriveKeysForApplication pulls from cache or generates several geneartions of PTKs
+// deriveKeysForApplication pulls from cache or generates several generations of PTKs
 // for the given application.
 func (f *FastTeamChainLoader) deriveKeysForApplication(m libkb.MetaContext, app keybase1.TeamApplication, arg fastLoadArg, dat ftlCombinedData) (keys []keybase1.TeamApplicationKey, err error) {
 
