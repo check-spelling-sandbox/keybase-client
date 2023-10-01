@@ -34,7 +34,7 @@ const chunkEmojis = (emojis: Array<EmojiData>, emojisPerLine: number): Array<Row
     key: (c && c.length && c[0] && c[0].short_name) || String(idx),
   }))
 
-// Remove those that have been obsolete and have a replacement. But it doens't
+// Remove those that have been obsolete and have a replacement. But it doesn't
 // cover cases like :man-facepalming: vs :face_palm: even though they look
 // same.
 const removeObsolete = (emojis: Array<EmojiData>) => emojis.filter(e => !e.obsoleted_by)
