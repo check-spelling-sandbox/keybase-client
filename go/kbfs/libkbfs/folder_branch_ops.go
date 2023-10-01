@@ -1633,7 +1633,7 @@ func (fbo *folderBranchOps) kickOffPartialMarkAndSweepIfNeeded(
 	}
 
 	// Kick off the mark-and-sweep, and wait for it to finish or
-	// be pre-empted.
+	// be preempted.
 	currMarkAndSweepCtxDone, currMarkAndSweepCancel :=
 		fbo.kickOffPartialMarkAndSweep(ctx, lState, syncConfig, md)
 	return currMarkAndSweepCtxDone, currMarkAndSweepCancel, md.Revision(), nil
@@ -1702,7 +1702,7 @@ func (fbo *folderBranchOps) partialMarkAndSweepLoop(trigger <-chan struct{}) {
 		timer.Stop()
 
 		// Kick off the mark-and-sweep, and wait for it to finish or
-		// be pre-empted.
+		// be preempted.
 		done, cancel, rev, err := fbo.kickOffPartialMarkAndSweepIfNeeded(
 			ctx, lState, triggered, lastMDRev)
 		if err != nil {
@@ -8426,7 +8426,7 @@ func (fbo *folderBranchOps) finalizeResolutionLocked(ctx context.Context,
 		return err
 	}
 
-	// Last chance to get pre-empted.
+	// Last chance to get preempted.
 	select {
 	case <-ctx.Done():
 		return ctx.Err()
