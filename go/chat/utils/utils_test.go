@@ -408,7 +408,7 @@ func BenchmarkDecorateLinks(b *testing.B) {
 		"By phone, voip,  even voice chat like discord. But, not messages or passing thoughts and notes.",
 		"When I use voice it's for a conversation, not messages in a bottle.",
 		"I'm all for new tech and shit. and evolution of society and shit. And obviously phones have done a lot of good. But is your life really that much of an action movie that you can't either pull into the side of the road or wait ? I mean we used to have to go home to use the phone. again.. not a \"new-tech-bad\". just.. people could chill",
-		"Voice msg or not.. is personal preference, no real justification to remove it.  it's similar to request ability to send exloding message in group removed, and exploding msg should be available in 1/1 convo only. ",
+		"Voice msg or not.. is personal preference, no real justification to remove it.  it's similar to request ability to send exploding message in group removed, and exploding msg should be available in 1/1 convo only. ",
 		"😹 Yeah. I don't even *listen* to or accept audio messages or voice calls from anyone I don't care about.",
 		"https://keybase.io/docs/teams/design",
 		"subteams and their parent teams and other subteams under the same parent are all separate and can not see files or messages from one another. however, they'll all share the quota of the parent team (100gb total across all sub teams), and an admin/owner of a team can add themself to any subteam of the team they're admin/owner of",
