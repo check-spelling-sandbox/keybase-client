@@ -700,7 +700,7 @@ const initCrypto = () => {
   }
   commonListenActions('crypto')
   // This action is used to hook into the TeamBuildingGen.finishedTeamBuilding action.
-  // We want this so that we can figure out which user(s) havbe been selected and pass that result over to store.crypto.encrypt.recipients
+  // We want this so that we can figure out which user(s) have been selected and pass that result over to store.crypto.encrypt.recipients
   Container.listenAction(TeamBuildingGen.finishedTeamBuilding, filterForNs('crypto', onSetRecipients))
 }
 
