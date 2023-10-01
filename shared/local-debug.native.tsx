@@ -5,7 +5,7 @@ import {LogBox} from 'react-native'
 import {serverConfig} from 'react-native-kb'
 import noop from 'lodash/noop'
 
-// Toggle this to disable yellowboxes
+// Toggle this to disable yellow boxes
 LogBox.ignoreAllLogs()
 
 // uncomment this to watch the RN bridge traffic: https://github.com/facebook/react-native/commit/77e48f17824870d30144a583be77ec5c9cf9f8c5
