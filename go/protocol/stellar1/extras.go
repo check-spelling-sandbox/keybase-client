@@ -214,7 +214,7 @@ func (a *Asset) IsEmpty() bool {
 }
 
 // String returns a display friendly form of the asset, compatible with
-// xdr.Asset fomat: type/code/issuer or just "native" if asset is native XLM.
+// xdr.Asset format: type/code/issuer or just "native" if asset is native XLM.
 func (a Asset) String() string {
 	if a.Type == "native" {
 		return a.Type
