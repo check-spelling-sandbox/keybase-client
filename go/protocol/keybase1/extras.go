@@ -3493,7 +3493,7 @@ func (d *HiddenTeamChain) Merge(newData HiddenTeamChain) (updated bool, err erro
 		}
 
 		// If we previously loaded full links up to d.LastFull, but this is d.LastFull+1,
-		// then we can safely bump the pointer one foward.
+		// then we can safely bump the pointer one forward.
 		if q == d.LastFull+Seqno(1) {
 			d.LastFull = q
 		}
