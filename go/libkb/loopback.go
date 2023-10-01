@@ -28,7 +28,7 @@ type LoopbackListener struct {
 	isClosed bool
 }
 
-// LoopbackConn implments the net.Conn interface but is used to loopback
+// LoopbackConn implements the net.Conn interface but is used to loopback
 // from a process to itself. It is goroutine safe.
 type LoopbackConn struct {
 
