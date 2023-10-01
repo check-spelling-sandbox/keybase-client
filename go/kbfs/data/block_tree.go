@@ -480,7 +480,7 @@ func checkForHolesAndTruncate(
 // returns blocks until reaching the end of the data.  If `prefixOk`
 // is true, the function will ignore context deadline errors and
 // return whatever prefix of the data it could fetch within the
-// deadine.  Return params:
+// deadline.  Return params:
 //
 //   - pathsFromRoot is a slice, ordered by offset, of paths from
 //     the root to each block that makes up the range.  If the path is

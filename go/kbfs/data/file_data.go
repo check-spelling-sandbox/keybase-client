@@ -99,7 +99,7 @@ func childFileIptr(p ParentBlockAndChildIndex) IndirectFilePtr {
 // the end of the file.  The caller is responsible for concatenating
 // the data into a single buffer if desired. If `prefixOk` is true,
 // the function will ignore context deadline errors and return
-// whatever prefix of the data it could fetch within the deadine.
+// whatever prefix of the data it could fetch within the deadline.
 func (fd *FileData) getByteSlicesInOffsetRange(ctx context.Context,
 	startOff, endOff Int64Offset, prefixOk bool) ([][]byte, error) {
 	if startOff < 0 || endOff < -1 {
