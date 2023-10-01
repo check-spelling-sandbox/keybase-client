@@ -125,9 +125,9 @@ func (f *File) attr(ctx context.Context, a *fuse.Attr) (err error) {
 	return f.fillAttrWithMode(ctx, &de, a)
 }
 
-var _ fs.NodeAccesser = (*File)(nil)
+var _ fs.NodeAccessor = (*File)(nil)
 
-// Access implements the fs.NodeAccesser interface for File. This is necessary
+// Access implements the fs.NodeAccessor interface for File. This is necessary
 // for macOS to correctly identify plaintext files as plaintext. If not
 // implemented, bazil-fuse returns a nil error for every call, so when macOS
 // checks for executable bit using Access (instead of Attr!), it gets a

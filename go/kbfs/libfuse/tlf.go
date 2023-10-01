@@ -162,7 +162,7 @@ func (tlf *TLF) loadArchivedDir(
 	return tlf.loadDirHelper(ctx, libkbfs.ReadMode, branch, true)
 }
 
-// Access implements the fs.NodeAccesser interface for *TLF.
+// Access implements the fs.NodeAccessor interface for *TLF.
 func (tlf *TLF) Access(ctx context.Context, r *fuse.AccessRequest) error {
 	return tlf.folder.access(ctx, r)
 }

@@ -449,7 +449,7 @@ func (f *Folder) openFileCount() int64 {
 // wraps a Dir should implement.
 type DirInterface interface {
 	fs.Node
-	fs.NodeAccesser
+	fs.NodeAccessor
 	fs.NodeRequestLookuper
 	fs.NodeCreater
 	fs.NodeMkdirer
@@ -494,7 +494,7 @@ func newDir(folder *Folder, node libkbfs.Node) *Dir {
 
 var _ DirInterface = (*Dir)(nil)
 
-// Access implements the fs.NodeAccesser interface for File. See comment for
+// Access implements the fs.NodeAccessor interface for File. See comment for
 // File.Access for more details.
 func (d *Dir) Access(ctx context.Context, r *fuse.AccessRequest) (err error) {
 	ctx = d.folder.fs.config.MaybeStartTrace(

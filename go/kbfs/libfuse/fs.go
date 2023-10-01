@@ -451,9 +451,9 @@ func NewRoot() *Root {
 	}
 }
 
-var _ fs.NodeAccesser = (*FolderList)(nil)
+var _ fs.NodeAccessor = (*FolderList)(nil)
 
-// Access implements fs.NodeAccesser interface for *Root.
+// Access implements fs.NodeAccessor interface for *Root.
 func (*Root) Access(ctx context.Context, r *fuse.AccessRequest) error {
 	if int(r.Uid) != os.Getuid() &&
 		// Finder likes to use UID 0 for some operations. osxfuse already allows
