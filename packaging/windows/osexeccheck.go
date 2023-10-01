@@ -57,7 +57,7 @@ func execGoCommand() error {
 	cmd := exec.Command("go", "version")
 	outbytes, err := cmd.CombinedOutput()
 	if err != nil {
-		// Go 1.19 now doesn't allow running executabls that match the relative path,
+		// Go 1.19 now doesn't allow running executables that match the relative path,
 		// and so this errors out. That is good enough for us.
 		fmt.Printf("got an error running go command (should be ok): %s\n", err)
 		return nil

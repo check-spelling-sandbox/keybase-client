@@ -107,7 +107,7 @@ doinstaller_wix.cmd debug
 
 - `build_prerelease.cmd` builds most of the client executables
 - `buildui.cmd` builds the ui
-- `doinstaller_wix.cmd` does codesigning on all the executabls and builds the installer (requires signing certificate)
+- `doinstaller_wix.cmd` does codesigning on all the executables and builds the installer (requires signing certificate)
 - `dorelease.cmd` calls the above scripts and copies to s3. Invoked by the build bot.
 
 # Upgrading Dokan
