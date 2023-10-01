@@ -911,7 +911,7 @@ const onPathChange = (_: unknown, action: EngineGen.Keybase1NotifyFSFSSubscripti
   if (clientIDFromNotification !== clientID) {
     return null
   }
-  /* eslint-disable-next-line */ // not smart enought to know all cases covered
+  /* eslint-disable-next-line */ // not smart enough to know all cases covered
   return topics?.map(topic => {
     switch (topic) {
       case RPCTypes.PathSubscriptionTopic.children:
