@@ -720,7 +720,7 @@ func isSubchainStart(m MetaContext, currentLink *ChainLink, prevLink *ChainLink,
 	}
 
 	// case 4
-	found, _, err := currentLink.checkSpecialLinksTable(hardcodedResets, uid, "harcoded resets")
+	found, _, err := currentLink.checkSpecialLinksTable(hardcodedResets, uid, "hardcoded resets")
 	if err != nil {
 		m.Warning("Error in isSubchainStart: %s", err.Error())
 		return false, err

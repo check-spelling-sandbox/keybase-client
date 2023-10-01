@@ -650,7 +650,7 @@ func IsUserByUsernameOffline(m MetaContext, un NormalizedUsername) bool {
 		return true
 	}
 
-	// We already took care of the bad username casing in the harcoded exception list above,
+	// We already took care of the bad username casing in the hardcoded exception list above,
 	// so it's ok to treat the NormalizedUsername as a cased string.
 	uid := usernameToUIDPreserveCase(un.String())
 
