@@ -117,7 +117,7 @@ function updateIconFont(web: boolean) {
   const svgFilenames = getSvgNames(false /* print skipped */)
   /*
    * NOTE: Since icon counters can be non-sequential, we need to tell our font generator which codepoint to use for each icon.
-   * This is done by setting `codepoints` object where the keys are character codes (hexidecimal) and the values are icon names
+   * This is done by setting `codepoints` object where the keys are character codes (hexadecimal) and the values are icon names
    *
    * { [name of svg file]: charCode }
    *
@@ -126,7 +126,7 @@ function updateIconFont(web: boolean) {
    */
   const seenCounters = new Set()
   const codepointsMap = svgFilenames.reduce((pointsMap, {counter, filePath}) => {
-    // Character code value converted from decimal to hexidecimal
+    // Character code value converted from decimal to hexadecimal
     const charCodeHex = computeCounter(counter).toString(16)
     const {name} = path.parse(filePath)
     if (seenCounters.has(counter)) {
