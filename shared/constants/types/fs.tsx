@@ -531,7 +531,7 @@ export type State = {
   readonly edits: Edits
   readonly errors: Array<string>
   readonly fileContext: Map<Path, FileContext>
-  readonly folderViewFilter: string | null // on mobile, '' is exapnded empty, null is unexpanded
+  readonly folderViewFilter: string | null // on mobile, '' is expanded empty, null is unexpanded
   readonly kbfsDaemonStatus: KbfsDaemonStatus
   readonly lastPublicBannerClosedTlf: string
   readonly overallSyncStatus: OverallSyncStatus
