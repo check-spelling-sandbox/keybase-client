@@ -159,7 +159,7 @@ the app. So there isn't a real difference.
 * Minimal time to engine handshake. By requiring less files before we can start
   the engine handshake, we can get a headstart on this and lower the time until
   we can get useful data back from the engine.
-* Investigate if we can get by with loading a minimal version of emoij data
+* Investigate if we can get by with loading a minimal version of emoji data
 
 
 ## Case study: Testing immediate engine calls during bootstrap.
