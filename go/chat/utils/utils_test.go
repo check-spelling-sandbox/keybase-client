@@ -637,7 +637,7 @@ func BenchmarkDecorateLinks(b *testing.B) {
 		"i only see F94DA63DF218AA31 and 43E0A440A5971D1B",
 		"I've never posted any keys to a public server on my own. Unless keybase did it outside their own server, that's the only place that should exist.",
 		"Now I see `f218aa31` not sure where I got that other one from",
-		"While expirementing, try to keep copies of everything, in case you need to \"clear the record\" later.",
+		"While experimenting, try to keep copies of everything, in case you need to \"clear the record\" later.",
 		"I'm enjoying it. I don't see af971d1b on my profile...there are two keys on the page though",
 		"It's lots of fun, imho",
 		"I'm newish to pgp.",
