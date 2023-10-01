@@ -62,7 +62,7 @@ func (id *BranchID) UnmarshalBinary(data []byte) error {
 }
 
 // ParseBranchID parses a hex encoded BranchID. Returns NullBranchID
-// and an InvalidBranchID on falire.
+// and an InvalidBranchID on failure.
 func ParseBranchID(s string) (BranchID, error) {
 	if len(s) != BranchIDStringLen {
 		return NullBranchID, InvalidBranchID{s}
