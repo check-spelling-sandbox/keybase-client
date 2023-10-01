@@ -380,7 +380,7 @@ func main() {
 	}
 
 	// Clear the environment to harden ourselves against any
-	// unforeseen environmnent variables exposing vulnerabilities
+	// unforeseen environment variables exposing vulnerabilities
 	// during the effective user escalation below.
 	os.Clearenv()
 
