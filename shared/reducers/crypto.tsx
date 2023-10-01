@@ -309,7 +309,7 @@ export default Container.makeReducer<Actions, Types.State>(initialState, {
 
     const op = draftState[operation]
     // The final progress notification might come after saltpackDone.
-    // Reset progress when finsihed
+    // Reset progress when finished
     if (bytesComplete === bytesTotal) {
       op.bytesComplete = 0
       op.bytesTotal = 0
